@@ -1,0 +1,168 @@
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.footer {
+  text-align: center;
+  padding: 1px;
+  background-color: #282c34;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Center the employee detail table on the screen */
+.employee-detail {
+  display: box;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Style the card */
+.card {
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  background-color: #fff;
+  text-align: left;
+  width: 80%; /* Adjust the width as needed */
+}
+
+
+/* Style the "Add Employee" row */
+.add-employee .btn-primary {
+  background-color: rgb(95, 88, 88);
+  color: rgb(255, 255, 255); 
+  border-color: black; 
+}
+
+/* Center-align the table within the employee-detail section */
+.employee-detail table {
+  margin: 0 auto;
+  width: 80%;
+  border-collapse: collapse;
+}
+
+/* Style the table header row */
+.employee-detail th {
+  background-color: #f2f2f2;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Style the table data rows */
+.employee-detail tr:nth-child(odd) {
+  background-color: #ffffff; 
+}
+
+.employee-detail tr:nth-child(even) {
+  background-color: #f2f2f2; 
+}
+
+/* Style the table cells */
+.employee-detail td {
+  padding: 8px;
+}
+
+/* Style the labels within table cells */
+.employee-detail td strong {
+  font-weight: bold;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Style the input field */
+.search-bar input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
+  margin-right: 10px;
+}
+
+/* Style the search button */
+.search-bar .btn-primary {
+  background-color: #007bff; 
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 8px 16px;
+}
+
+/* Style the search button on hover */
+.search-bar .btn-primary:hover {
+  background-color: #0056b3; 
+}
+
+.search-bar select {
+  padding: 10.5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 150px; /* Adjust the width as needed */
+  margin-right: 10px;
+  background-color: #fefefe; /* Background color for the dropdown */
+  color: #121111; /* Text color for the dropdown */
+}
+.search-bar .btn-download {
+  background-color: #15b15e; 
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 8px 16px;
+}
+
+/* Customize the pagination container */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Style the previous and next buttons */
+.pagination a {
+  display: inline-block;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #333;
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer; /* Set the cursor to pointer on hover */
+}
+
+/* Style the active page button */
+.pagination .active a {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Style the disabled previous and next buttons */
+.pagination .disabled a {
+  cursor: not-allowed;
+  pointer-events: none;
+  background-color: #ccc;
+  color: #666;
+}
