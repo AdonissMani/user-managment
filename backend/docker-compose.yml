@@ -1,0 +1,19 @@
+version: '3'
+services:
+
+ # MySQL Database Service
+  mysql-container:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: mani
+      MYSQL_DATABASE: sqlDemo
+    ports:
+      - "3306:3306"
+    
+  # React Frontend Service
+  react-frontend:
+    image: react-frontend
+    ports:
+      - "3000:3000"
+
+ 
